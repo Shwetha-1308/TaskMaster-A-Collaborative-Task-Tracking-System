@@ -1,83 +1,169 @@
-TaskMaster – A Collaborative Task Tracking System
+TaskMaster – Collaborative Task Management System
 
-TaskMaster is a collaborative, Trello-like task management system that allows users to organize projects using boards, lists, and cards (tasks).
-It supports user authentication, task customization, drag-and-drop interface, search functionality, and collaboration features.
-The system allows users to create, update, and delete tasks efficiently with a clean backend architecture and structured APIs.
+TaskMaster is a full-featured collaborative task management system designed to help teams plan, organize, and track work efficiently.
+Users can create boards, lists, tasks, add labels, set due dates, attach files, comment, search tasks, collaborate with team members, and manage task workflows through a drag-and-drop interface.
+
+-----------------------------------------------------------------------------------------------------------------------
 
 🚀 Project Overview
 
-TaskMaster replicates the workflow of popular project management tools like Trello.
-Users can create boards, lists, and tasks, organize them visually, apply labels, set due dates, add attachments, and manage work more efficiently.
+TaskMaster provides a structured way to manage projects by breaking them into:
 
-This project focuses primarily on:
+Boards – represent projects
 
-Backend architecture
+Lists – categorize workflow stages
 
-Task creation, modification, and deletion
+Tasks (Cards) – individual work items
 
-Search functionality
+The system supports collaboration, allowing multiple users to work together on shared boards with full task activity tracking.
 
-Collaboration through board sharing
+-----------------------------------------------------------------------------------------------------------------------------------
 
-User authentication and board access control
+✨ Features
 
----------------------------------------------------------------------
+🔐 User Authentication
 
-✨ Key Features
-🧑‍💻 User Authentication
-
-Secure user registration and login
+User registration & login
 
 JWT/session-based authentication
 
-Access control for boards and tasks
+Secured APIs
+
+Access control for shared boards
 
 🗂️ Boards, Lists & Tasks
 
-Create, delete, rename boards
+Create, rename, delete boards
 
-Add lists under boards
+Add lists under each board
 
-Create tasks (cards) inside lists
+Add tasks under lists
 
-Move tasks between lists
+Modify tasks at any time
 
-🏷️ Task Enhancements
+Drag & drop tasks between lists
 
-Labels
+📝 Task Features
+
+Title & description
 
 Due dates
 
-Descriptions
+Labels (color-coded)
 
 Comments
 
-Attachments 
+Attachments
+
+Task order management
+
+Status updates
+
+👥 Collaboration
+
+Share boards with team members
+
+Multi-user access
+
+Comment-based communication
+
+Shared task visibility
+
+🔔 Notifications
+
+Task updates
+
+Comments
+
+Due date reminders (based on backend rules)
 
 🔍 Search Functionality
 
-Search tasks by title, description, labels, or status
+Search tasks by title
 
-🖱️ Drag & Drop Support
+Search by description
 
-Smooth movement between lists
+Filter tasks by labels, dates, status
 
-Rearrange list positions
+---------------------------------------------------------------------------------------------------------------------
 
 🛠️ Tech Stack
 Backend
 
-Java / Spring Boot
+Java
 
-RESTful API architecture
+Spring Boot
 
-Hibernate / JPA for persistence
+Hibernate / JPA
 
-MySQL database
+MySQL / PostgreSQL
 
 JWT Authentication
 
+REST API Architecture
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+🏁 Getting Started
+
+📥 Clone the Repository:
+
+git clone https://github.com/yourusername/taskmaster.git
+
+cd taskmaster
+
+⚙️ Backend Setup
+
+Install Dependencies:
+
+cd backend
+
+mvn clean install
+
+Configure application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/taskmaster
+
+spring.datasource.username=root
+
+spring.datasource.password=yourpassword
+
+jwt.secret=your_secret_here
+
+file.upload.path=/uploads
+
+Run the Backend:
+
+mvn spring-boot:run
+
+
+Backend runs on:
+
+http://localhost:8080
+
+-------------------------------------------------------------------------------------
 
 📡 API Documentation
 
-Below are sample API request and response formats similar to your Task-APIs.postman_collection and User-APIs.postman_collection.
+Refer to these APIs Postman collections:
+
+✔ Task-APIs.postman_collection
+
+✔ User-APIs.postman_collection
+
+----------------------------------------------------------------------------------------------------------------------------
+
+🚀 Future Enhancements
+
+AI-powered task suggestions
+
+Calendar-based task view
+
+Board activity analytics & dashboards
+
+Export board as PDF or Excel
+
+Voice notes inside tasks
+
+Recurring task feature
+
