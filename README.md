@@ -108,7 +108,7 @@ REST API Architecture
 
 📥 Clone the Repository:
 
-git clone https://github.com/yourusername/taskmaster.git
+git clone https://github.com/Shwetha-1308/TaskMaster-A-Collaborative-Task-Tracking-System.git
 
 cd taskmaster
 
